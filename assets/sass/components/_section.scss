@@ -20,24 +20,20 @@
 
     & > :first-child {
       flex-basis: 39.75rem;
+      display: flex;
+      flex-wrap: wrap;
+
+      & > li {
+        padding: sz("16");
+        display: flex;
+        flex-direction: column;
+        column-gap: sz("4");
+        flex-basis: 19.125rem;
+      }
     }
 
     & > :last-child {
       flex-basis: 32.875rem;
-    }
-  }
-
-  &[data-where="about me list"] {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-
-    & > li {
-      padding: sz("16");
-      display: flex;
-      flex-direction: column;
-      column-gap: sz("4");
-      flex-basis: 19.125rem;
     }
   }
 
