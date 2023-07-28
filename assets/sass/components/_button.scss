@@ -18,6 +18,45 @@
     }
   }
 
+  &--img {
+    position: relative;
+    aspect-ratio: 1;
+    border-radius: 2.5rem;
+
+    &[data-image="discord"] {
+      background-image: url("/assets/images/discord.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &[data-image="instagram"] {
+      background-image: url("/assets/images/instagram.png");
+      background-repeat: no-repeat;
+    }
+
+    &[data-image="message"] {
+      background-image: url("/assets/images/message.png");
+      background-repeat: no-repeat;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: 2.5rem;
+      opacity: 0;
+      top: 0.125rem;
+      left: 0.125rem;
+      transition: opacity 100ms linear;
+      box-shadow: 0 0 1rem 0.25rem clr(other, "400");
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+  }
+
   &--right {
     display: block;
     margin-inline-start: auto;
