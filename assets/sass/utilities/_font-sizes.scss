@@ -1,0 +1,7 @@
+@use "../abstracts/" as *;
+
+@each $font-sizes-name, $font-sizes-value in $font-sizes {
+  .fz-#{$font-sizes-name} {
+    font-size: $font-sizes-value;
+  }
+}

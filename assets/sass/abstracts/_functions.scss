@@ -1,0 +1,30 @@
+@use "sass:map";
+@use "colors" as *;
+@use "sizes" as *;
+@use "font-sizes" as *;
+
+@function clr($color, $shade) {
+  @if (map.has-key($default, $color, $shade)) {
+    @return map.get($default, $color, $shade);
+  } @else if ($color == "linear") {
+    @return map.get($default, "linear");
+  } @else {
+    @error '$default does not have a color named that color';
+  }
+}
+
+@function fz($font-sizes) {
+  @if (map.has-key($font-sizes, $font-sizes)) {
+    @return map.get($font-sizes, $font-sizes);
+  } @else {
+    @error '$font-sizes does not have a font-size named that font-size';
+  }
+}
+
+@function sz($size) {
+  @if (map.has-key($sizes, $size)) {
+    @return map.get($sizes, $size);
+  } @else {
+    @error '$sizes does not have a size named that size';
+  }
+}
