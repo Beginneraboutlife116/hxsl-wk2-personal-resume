@@ -2,11 +2,17 @@
 
 @each $color, $shade-map in $default {
   @each $shade, $value in $shade-map {
-    .clr-#{$color}-#{$shade} {
-      color: $value;
-    }
-    .bg-#{$color}-#{$shade} {
-      background-color: $value;
+    @if ($color == "linear") {
+      .bg-#{$color}-#{$shade} {
+        background-image: $value;
+      }
+    } @else {
+      .clr-#{$color}-#{$shade} {
+        color: $value;
+      }
+      .bg-#{$color}-#{$shade} {
+        background-color: $value;
+      }
     }
   }
 }
