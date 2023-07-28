@@ -1,7 +1,11 @@
-.even-columns {
-  display: flex;
+@use "../abstracts/" as *;
 
-  & * {
-    flex-grow: 1;
+.even-columns {
+  --gap-size: #{sz("24")};
+  display: flex;
+  gap: var(--gap-size);
+
+  & > * {
+    flex: 1 0;
   }
 }

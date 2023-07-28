@@ -1,0 +1,12 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  & * {
+    flex-basis: 19.125rem;
+  }
+  & :last-child {
+    flex-basis: 12.25rem;
+    text-align: right;
+  }
+}

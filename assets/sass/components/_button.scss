@@ -1,15 +1,25 @@
+@use "../abstracts/" as *;
+
 .btn {
   padding: 0.75em 1.5em;
   border-radius: 99em;
   border: none;
+  cursor: pointer;
 
   &[data-with="arrow"] {
-    & > * {
-      $fill: red;
+    & > span {
+      $fill: clr(neutral, "900");
       display: inline-block;
-      width: 20px;
+      width: 1.5rem;
       aspect-ratio: 1;
+      vertical-align: bottom;
+      margin-inline-start: sz("4");
       background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_2_112' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_2_112)'%3E%3Cpath d='M6.4 18L5 16.6L14.6 7H6V5H18V17H16V8.4L6.4 18Z' fill='#{$fill}'/%3E%3C/g%3E%3C/svg%3E");
     }
+  }
+
+  &--right {
+    display: block;
+    margin-inline-start: auto;
   }
 }

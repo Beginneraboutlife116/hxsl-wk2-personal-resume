@@ -7,9 +7,9 @@ body {
 
 a {
   text-decoration: none;
-  color: clr(neutral, 300);
+  color: clr(neutral, "300");
 
   &:hover {
-    color: clr(accent, 400);
+    color: clr(accent, "400");
   }
 }
