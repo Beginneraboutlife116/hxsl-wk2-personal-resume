@@ -1,7 +1,25 @@
+@use "../abstracts/" as *;
+
 .flex {
   display: flex;
 }
 
 .jc-between {
   justify-content: space-between;
+}
+
+.ai-start {
+  align-items: start;
+}
+
+@each $size-key, $size-value in $sizes {
+  .gap-#{$size-key} {
+    gap: $size-value;
+  }
+  .y-gap-#{$size-key} {
+    row-gap: $size-value;
+  }
+  .x-gap-#{$size-key} {
+    column-gap: $size-value;
+  }
 }

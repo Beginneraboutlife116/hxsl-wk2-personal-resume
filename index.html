@@ -18,7 +18,7 @@
       </nav>
     </header>
     <main>
-      <section class="bg-neutral-900 py-72">
+      <section class="bg-neutral-900 | section" data-where="title">
         <div class="container | even-columns">
           <img src="./assets/images/people.png" alt="William Lee" />
           <div>
@@ -34,16 +34,19 @@
           </div>
         </div>
       </section>
-      <section class="bg-neutral-700">
-        <div class="container | even-columns">
+      <section class="bg-neutral-700 clr-neutral-100">
+        <div
+          class="flex x-gap-24 container | section"
+          data-where="introduction"
+        >
           <div>
-            <h2>Introduction</h2>
-            <p>
+            <h2 class="my-end-36 | heading-2">Introduction</h2>
+            <p class="my-end-32 fz-500">
               Hi, I'm William Lee, a Front-End Developer with a passion for
               building beautiful and responsive websites that provide an optimal
               user experience.
             </p>
-            <div>
+            <div class="flex ai-start x-gap-16">
               <img
                 src="./assets/images/sparkle-sm.png"
                 alt="sparkle image for decoration"
@@ -58,17 +61,15 @@
               />
             </div>
           </div>
-          <div>
-            <img
-              src="./assets/images/sparkle.png"
-              alt="bug sparkle for decoration"
-            />
-            <img src="./assets/images/photographer.png" alt="my hobby" />
-            <img
-              src="./assets/images/people-2.png"
-              alt="my second personal photo"
-            />
-          </div>
+          <img
+            src="./assets/images/sparkle.png"
+            alt="bug sparkle for decoration"
+          />
+          <img src="./assets/images/photographer.png" alt="my hobby" />
+          <img
+            src="./assets/images/people-2.png"
+            alt="my second personal photo"
+          />
         </div>
       </section>
       <section class="container | even-columns">

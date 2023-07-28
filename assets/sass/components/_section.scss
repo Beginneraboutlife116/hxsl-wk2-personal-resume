@@ -1,0 +1,15 @@
+@use "../abstracts/" as *;
+
+.section {
+  padding-block: sz("160");
+
+  &[data-where="title"] {
+    padding-block: sz("72");
+  }
+
+  &[data-where="introduction"] {
+    background-image: url("/assets/images/Rectangle\ 7.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
