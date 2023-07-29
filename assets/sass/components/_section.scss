@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
   }
 
-  &[data-where="about me"] {
+  &[data-where="about"] {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +34,7 @@
     }
   }
 
-  &[data-where="contact me"] {
+  &[data-where="contact"] {
     padding-block: sz("96");
     display: flex;
     justify-content: space-between;
