@@ -11,6 +11,12 @@
     &y-start-#{$sizes-key} {
       margin-block-start: $sizes-value;
     }
+    &y-start-auto {
+      margin-block-start: auto;
+    }
+    &y-end-auto {
+      margin-block-end: auto;
+    }
     &y-end-#{$sizes-key} {
       margin-block-end: $sizes-value;
     }
@@ -19,6 +25,12 @@
     }
     &x-start-#{$sizes-key} {
       margin-inline-start: $sizes-value;
+    }
+    &x-start-auto {
+      margin-inline-start: auto;
+    }
+    &x-end-auto {
+      margin-inline-end: auto;
     }
     &x-end-#{$sizes-key} {
       margin-inline-end: $sizes-value;

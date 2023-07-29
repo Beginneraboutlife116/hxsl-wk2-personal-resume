@@ -4,16 +4,13 @@
   &-1 {
     font-size: fz("800");
     color: clr(neutral, "100");
-
-    & :last-child {
-      display: block;
-      text-align: right;
-      font-size: fz("900");
-      color: clr(accent, "400");
-    }
   }
 
   &-2 {
     font-size: fz("800");
+
+    &[data-where="my projects"] {
+      margin-inline-start: 34.375rem;
+    }
   }
 }

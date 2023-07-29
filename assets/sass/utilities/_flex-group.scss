@@ -1,7 +1,7 @@
 @use "../abstracts/" as *;
 
-.flex {
-  display: flex;
+.fxd-column {
+  flex-direction: column;
 }
 
 .jc-between {
@@ -9,7 +9,19 @@
 }
 
 .ai-start {
-  align-items: start;
+  align-items: flex-start;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.ai-end {
+  align-items: flex-end;
+}
+
+.no-shrink {
+  flex-shrink: 0;
 }
 
 @each $size-key, $size-value in $sizes {
